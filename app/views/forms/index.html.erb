@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+		<form action="/forms/result/" method="post">
+			<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+			<label>Your name:</label>
+			<input type="text" name="name">
+			<label>Dojo Location</label>
+			<select name="location">
+				<option>Mountain View, CA</option>
+				<option>Los Angeles, CA</option>
+				<option>Miami, FL</option>
+				<option>Seattle, WA</option>
+			</select>
+			<label>Favorite lenguage</label>
+			<select name="language">
+				<option>Javascript</option>
+				<option>PHP</option>
+				<option>Ruby</option>
+			</select>
+			<label>Comments</label>
+			<textarea name="comments"></textarea>
+			<input class="button-primary u-full-width" type="submit" value="Submit">
+		</form>
+	</div>
+</div>
